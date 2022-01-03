@@ -1,0 +1,175 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* background: url(Ressources/back2.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+}
+
+
+.loginBox{
+    width: 400px;
+    height: 400px;
+ 
+   
+    opacity: 90%;
+    color: black;
+
+    top: 50%;
+    left: 75%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 50px 30px;
+    border-radius: 20%  30% 0% 40%;
+    border-left: 4px solid black;
+    border-right: 4px solid black;
+   
+}
+.logo{
+    width: 130px;
+    height: 50px;
+    border-radius:20%  30% 0% 40% ;
+    position: absolute;
+    top: -3px;
+    left: calc(50% - 50px);
+    /* border-left: 3px solid #FF5003; */
+    /* border-right: 3px solid rgb(30, 18, 196); */
+}
+.login-Title{
+        margin: 0;
+        padding: 0 0 20px;
+        text-align: center;
+        font-size: 22px;
+        font-family:monospace;
+        color: black;
+}
+
+.loginBox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.loginBox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.loginBox input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid  #5E6668 ;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.loginBox input[type="submit"]
+{
+  border: none;
+    height: 40px;
+  
+    background: #5E6668;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 20px;
+    border-radius: 60px ;
+    color: #fff;   
+}
+.loginBox input[type="submit"]:hover
+{
+    cursor: pointer;
+    background:linear-gradient(to right,bisque  , rgb(28, 13, 116));
+    color: #000;
+}
+
+
+.DES{
+ width: 40%;
+}
+.AboutResto{
+    color: #fff;
+    text-align: center;
+    font-family: cursive;
+    position: relative;
+    top: 80px;
+    animation: content;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes content {
+    0% { left: -50px;}
+    100% {
+        left: 100px;
+    }
+}
+ .button .btn{
+     display: inline-block;
+     color: #fff;
+     background:#CE3232;
+     text-decoration: none;
+     padding: 1rem 2rem;
+     border-radius: 30px 30px 0px 30px ;
+     /* border: 1px solid bisque; */
+     opacity: 0;
+     animation: btn;
+     animation-duration: 2s;
+     animation-delay:3s;
+     animation-fill-mode: forwards;
+     transition-property: transform;
+     transition-duration: 1s;
+}
+/* .btn:hover {
+    transform: rotateY(180deg);
+
+} */
+
+.button{
+    position: relative;
+    top: 100px;
+    left: 300px;
+}
+
+@keyframes btn {
+    0% {opacity: 0;}
+    100% {
+        opacity: 1;
+    }
+}
+.Title{
+animation: light 1.5s ease-in-out infinite alternate;
+}
+@keyframes light {
+    from{
+        color: #fff;
+        text-shadow:0 0 10px #00FFF2 ,
+        0 0 20px #f3e8e3 ,
+        0 0 30px #dad5d4 ,
+        0 0 40px #fdf8f6,
+        0 0 50px #ffffff, 
+        0 0 60px #fdfaf9, 
+        0 0 70px #FF5003, 
+        0 0 90px #FF5003;
+
+    }
+    /*  to{
+        color: lightgray;
+        text-shadow:  0 0 20px #00fff2;
+      0 0 30px #00fff2,
+        0 0 40px #00fff2,
+        0 0 50px #00fff2,
+       
+        0 0 60px #00fff2,
+        0 0 70px #00fff2,
+        0 0 80px #00fff2,
+        0 0 90px #00fff2; 
+    }*/
+}
+.Biglogo .img
+{ 
+    width: 200px;
+}
+
