@@ -1,5 +1,8 @@
+/* Style de page index login et menu  */
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Oleo+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -7,18 +10,18 @@
 
 }
 .body-page-index {
+  
     background: url(Ressources/BK.jpg);
     background-size: cover;
-  width: 100vw;
-    height: 100vh;
+    background-position: center;
+    width: 800px;
+    height: 1450px;
 }
-.Logo-Page-Index {
-display: inline-block;
-}
+
 .Logo-Image {
     width: 160px;
     height: 70px;
-    grid-column: 1/2;
+    grid-column: 1/3;
 }
 .List-Header ul li {
     display: inline-flex;
@@ -28,47 +31,80 @@ display: inline-block;
     font-size: 25px;
     font-family: 'Architects Daughter', cursive;
 }
+/* ---- */
 .List-Header{
-  grid-column: 3/4;
+  grid-column: 1/4;
+  grid-row: 2;
+  justify-self:center;
 }
 .Index-header {
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  grid-template-rows: 1fr;
+  grid-template-rows: 1fr 1fr;
 }
+
+
 .Title {
     color:white;
-    /* display: grid;
-    grid-template-columns: 1fr; */
+ 
     text-align: center;
-    font-size: 80px;
+    font-size: 90px;
     font-family: 'Oleo Script', cursive;
-    padding: 10vh;
+    padding: 20vh;
 
 }
-.description {
+.description  {
     color:white;
     font-size: 20px;
     text-align: center;
     font-family: Verdana;
 }
 .btn-Enter {
-  width: 140px;
-height: 40px;
+  width: 190px;
+height: 50px;
 border: none;
-border-radius: 20px;
+border-radius: 30px;
 color: white;
 font-size: 25px;
 background-color: #CE3232;
  grid-column: 2/3;
  justify-self: center;
  font-family: 'Architects Daughter', cursive;
+ margin-top: 26%;
 
 }
 .button {
     display:grid;
     grid-template-columns: 1FR 1fr 1fr;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  ------------------------page login  ---------------------------*/
 
 .Logo-Page-Login {
@@ -83,40 +119,39 @@ background-color: #CE3232;
 
 }
 .Login-Title {
-    grid-row: 1/2;
-    grid-column: 2/3;
+  
+    grid-row: 2/3;
+    grid-column: 1/2;
     justify-self: center;
 }
 .body-page-Login {
     /* background: linear-gradient( to left , ) */
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(to left, white 0 50%, black 50% 100%);
+    background: linear-gradient(to left, black 0 50%, black 50% 100%);
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 20% 80%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 10% 80%;
 
 }
 
 .Image-Table  {
-    width: 100%;
-    height: 80%;
-    grid-column: 1/2;
-    grid-row: 2/3;
-  
-}
-
-svg{
-     width: 100%;
-    height: 100%; 
-   
+    display: none;
 }
 .loginBox {
     margin: 5%;
     font-family: 'Architects Daughter', cursive;
-    grid-column: 2/3;
-    grid-row: 2/3;
+
+    grid-row: 3/4;
+    grid-column: 1;
+    background-color: white;
+    border-radius: 60px 0px 60px 0px;
+    padding: 10%;
+    height: 94%;
+  
 }
+
+
 .loginBox input{
     width: 100%;
     margin-bottom: 20px;
@@ -133,15 +168,15 @@ svg{
 }
 .loginBox input[type="submit"]
 {
-  border: none;
+    border: none;
     height: 40px;
     background: #CE3232;
     color: #fff;
     font-size: 25px;
-    margin-top: 20px;
+    margin-top: 30px;
     border-radius: 60px ;
     color: #fff;   
-    width: 30%;
+    width: 60%;
     font-family: 'Architects Daughter', cursive;
 }
 .loginBox input[type="submit"]:hover
@@ -154,7 +189,8 @@ svg{
     color: #CE3232;
     text-decoration: underline;
     font-family: 'Oleo Script', cursive;
-    font-size:50px;
+    font-size:30px;
+    font-weight: 1;
 }
 .Button-Login {
   display: flex;
@@ -165,6 +201,35 @@ svg{
     border-bottom: 1px solid  black ;
     outline: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ------------------------ Page Menu -------------------------------------- */
 .body-Page-Menu {
@@ -296,3 +361,85 @@ background: linear-gradient(229deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 
    }
     
    
+
+
+
+   
+@media screen and (min-width:1270px) {
+    .body-page-index {
+        width:100vw;
+        height:100vh;  
+        border: none;
+    } 
+    .List-Header{
+        grid-column: 3/4;
+        grid-row: 1;
+        padding: 3%;
+        justify-self: center;
+    }
+    .Index-header {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .Title {
+        padding: 10vh;
+    }
+    .description {
+        font-size: 20px;
+    }
+    .btn-Enter {
+         width: 140px;
+         height: 40px;
+         border-radius: 20px;
+         margin-top: 6%;
+    }
+
+    /* Login Page  */
+    .body-page-Login {
+
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(to left, white 0 50%, black 50% 100%);
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 10% 90%;
+    
+    }
+    .Image-Table  {
+        width: 100%;
+        height: 80%;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        display: block;
+      
+    }
+    
+    svg{
+         width: 100%;
+        height: 100%; 
+       
+    }
+
+    .loginBox {
+       
+        grid-column: 2/3;
+        grid-row: 2/3;
+        padding: 0;
+    }
+    .Login-Title {
+        grid-row: 1/2;
+        grid-column: 2/3;
+      
+    }
+
+    .loginBox input[type="submit"] {
+        width: 30%;
+
+    }
+
+    .Login-Title h1 {
+        font-size: 50px;
+    }
+}
