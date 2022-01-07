@@ -5,64 +5,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YOUEAT
-    </title>
-    <link rel="stylesheet" href="FirstPageStyle.css">
-    <link rel="icon" href="ICON.png">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="Ressources/ICON.png">
 
-
-    <style>
-        .mySlides {
-            display: none;
-        }
-    </style>
 </head>
 
 <body>
+    <div class="body-page-index">
+        <div class="Index-header">
+            <div class="Logo-Page-Index">
+                <img class="Logo-Image" src="Ressources/logo.png" alt="logo">
+            </div>
 
-    <div class="DES">
-        <div class="Title-div">
-        
-            <P class="Title"> <span class="s1"> YOU</span>
-                <span class="s2">EAT</span>
-            </P>
+            <div class="List-Header">
+                <ul>
+                    <li><a href="http://127.0.0.1:5500/CodeSource/Index.html">Home</a> </li>
+                    <li><a href="http://127.0.0.1:5500/CodeSource/Contact.html">Contact</a></li>
+                    <li><a href="">About</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="AboutResto">
-            <P> Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quos maxime consequatur, ut officia neque,
-                reprehenderit unde nobis sit rerum error. Id porro ex consectetur sapiente itaque molestiae, saepe
-                suscipit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quos maxime consequatur, ut officia neque,
-                reprehenderit unde nobis sit rerum error. Id porro ex consectetur sapiente itaque molestiae, saepe
-                suscipit.
-            </P>
-        </div>2
-        <div class="button">
-            <a href="http://127.0.0.1:5500/CodeSource/login.html" class="btn"> Entrer </a>
-        </div>
-    </div>
-    <div class="slider">
-        <img class="mySlides" src="Ressources/s1.png">
-        <img class="mySlides" src="Ressources/s2.png">
-        <img class="mySlides" src="Ressources/s3.png">
-        <img class="mySlides" src="Ressources/s4.png">
-      
-    </div>
-    <script>
-        var myIndex = 0;
-        carousel();
 
-        function carousel() {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            myIndex++;
-            if (myIndex > x.length) { myIndex = 1 }
-            x[myIndex - 1].style.display = "block";
-            setTimeout(carousel, 3500);
-        }
-    </script>
-</body>
+        <div class="Title">
+            <p>Delecious Food Zone</p>
+        </div>
+        <div class="description">
+
+            <pre>There are many variations of passages of Lorem Ipsum available, but the
+        majority have suffered alteration in some form, 
+by injected humour</bre>
+   </div>
+   <div class="button">
+       <!-- <button ></button> -->
+       <a class="btn-Enter" href="http://127.0.0.1:5500/CodeSource/PageLogin.html">
+        Enter
+       </a>
+  
+   </div>
+
+  </div>
+   </body>
 
 </html>
