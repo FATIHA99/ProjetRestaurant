@@ -23,13 +23,21 @@
     height: 70px;
     grid-column: 1/3;
 }
-.List-Header ul li {
+.List-Header ul li  {
     display: inline-flex;
-    color: white;
+    /* color: white; */
     list-style: none;
     margin-left: 30px;
     font-size: 25px;
     font-family: 'Architects Daughter', cursive;
+}
+.List-Header ul li a {
+    color:#FEA82F;
+}
+
+.List-Header ul li a:hover{
+    color:white;
+    background-color: #CE3232;
 }
 /* ---- */
 .List-Header{
@@ -59,7 +67,7 @@
     text-align: center;
     font-family: Verdana;
 }
-.btn-Enter {
+.btn-Enter  {
   width: 190px;
 height: 50px;
 border: none;
@@ -71,8 +79,10 @@ background-color: #CE3232;
  justify-self: center;
  font-family: 'Architects Daughter', cursive;
  margin-top: 26%;
+  text-align: center;
 
 }
+
 .button {
     display:grid;
     grid-template-columns: 1FR 1fr 1fr;
@@ -188,7 +198,9 @@ background-color: #CE3232;
 .Login-Title h1 {
     color: #CE3232;
     text-decoration: underline;
+    
     font-family: 'Oleo Script', cursive;
+    /* font-family: 'Oleo Script', cursive; */
     font-size:30px;
     font-weight: 1;
 }
@@ -203,18 +215,82 @@ background-color: #CE3232;
 }
 
 
+/* page feedback --------------------------------- */
 
 
+.Small-Dascription-feed p {
+ color: white;
+ font-size: 40px;
+ font-family: 'Oleo Script', cursive;
+ text-align: center;
+}
+.Container-Plate-feed {
+    height: 55%;
+    width: 55%;
+    display: inline-block;
+    border:2px double #F0A729;
+    margin-bottom: 4%;
+}
+
+.Plate-image {
+margin: 2% 0% 0% 8%;
+width: 80%;
+height: 40%;
+border-radius: 10PX;
+
+}
+
+.Plate-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3%;
+    /* border: 1px solid white; */
+    color:#ffffff;
+    width: 95%;
+   
+}
+.Plate-info h2 {
+    font-family: 'Oleo Script', cursive;
+    text-decoration: underline;
+    font-weight: 1;
+    text-align: center;
+}
+.Container-Plate-feed P {
 
 
+    color: white;
+    text-align: center;
+}
 
+.Container-Plate-feed  textarea{
+ background-color: transparent;
+ margin-left: 3%;
+ color: white;
+ border:none;
+ border-bottom: 1px solid  oldlace;
+ border-left:1px solid  oldlace ;
+ outline: none;
+ 
+}
+.Container-All-Plates {
 
+    display: flex;
+    flex-direction: column;
+align-items: center;
 
-
-
-
-
-
+}
+.checked {
+    color: orange;
+   
+  }
+  .NoCheck {
+      color: white;
+  }
+  .fa {
+    font-size: 25px;
+  }
+  
 
 
 
@@ -232,15 +308,15 @@ background-color: #CE3232;
 
 
 /* ------------------------ Page Menu -------------------------------------- */
-.body-Page-Menu {
-    width: 100vw;
-    height: 100vh;
-    background: rgb(255,255,255);
-background: linear-gradient(229deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 33%, rgba(0,0,0,1) 33%, rgba(0,0,0,1) 100%);
+/* .body-Page-Menu {
+    width:800pX;
+    height: 1600px;
+    /* background: rgb(255,255,255);
+background: linear-gradient(229deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 33%, rgba(0,0,0,1) 33%, rgba(0,0,0,1) 100%); */
     /* clip-path: polygon(0 00%, 40% 0, 150% 50%, 0 100%);
    background: #000; */
-    /* background: linear-gradient(to left, white 0 50%, black 50% 100%); */
-}
+    /* background: linear-gradient(to left, white 0 50%, black 50% 100%); 
+} */
 /* Logo */
  .Logo-Page-Menu {
         width: 280px;
@@ -262,7 +338,7 @@ background: linear-gradient(229deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 
         list-style: none;
         margin-left: 40px;
         margin-top: 5%;
-        font-size: 25px;
+        font-size: 20px;
         font-family: 'Architects Daughter', cursive;
      
         align-self: center;
@@ -271,38 +347,32 @@ background: linear-gradient(229deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 
     }
     .List-Menu {
    justify-self: center;
-      grid-column: 2/3;
+      grid-column: 1/3;
    height: 50PX;
 
    height: 90px;
     }
     .header-Menu{
       display: grid;
-      grid-template-columns: repeat(2,1fr);
-      grid-template-rows: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr ;
     }
    
-   
-
 
   /* PLATE */
   .Container-Two-Plate {
     display: grid;
-
-    grid-template-columns: 1fr  1fr;
+width: 90%;
+    grid-template-columns: 100% ;
+    grid-template-rows: 1fr 1fr ;
     border: 2px double #FEA82F ;
-    
-    margin-left: 15%;
-    margin-right: 15%;
-    height: 70%;
-    width: 68%;
-
+margin: 5% 4% 19% 4%;
   }
    .Plate-One{ 
        grid-column: 1/2;
        background: #F8C174;
        border-radius: 150px 0px 150px 0px;
-       width: 340px;
+       width: 300px;
        height: 350px;
        margin-top: 7%;
        justify-self: center;
@@ -310,47 +380,51 @@ background: linear-gradient(229deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 
    }
    .Plate-Two{
     justify-self: center;
-    grid-column: 2/3;
+    grid-row: 2/3;
     background: #F8C174;
     border-radius: 150px 0px 150px 0px;
-    width: 340px;
+    width: 300px;
     height: 350px;
     margin-top: 7%;
 }
   
 /* images  */
 .Image-Plate-One {
-    width: 250px; 
+    width: 240px; 
     border-radius: 70px;
     margin: 5%;
     margin-left: 19%; 
    }
 
    .Image-Plate-Two {
-    width: 250px; 
+    width: 240px; 
     border-radius: 70px;
     margin: 5%;
     margin-left: 19%; 
    }
-   .day-container {
-        display: flex;
-         justify-content: center;
-     
-       
-         
-   }
+ 
   .day { 
-    
-      position: absolute;
-        Top: 14%;
+      position: relative;
+        Top: 5vh;
+        left: 38%;
        background-color: #CE3232;
-       width: 10%;
+       width:30%;
        height: 4%;
       text-align: center;
-       border-radius: 10px;
+       border-radius: 15px;
        color: #fff;
        font-size: 20px;
        font-family: 'Architects Daughter', cursive;
+   }
+
+   .Title-Menu {
+       margin-bottom: 7%;
+       font-family: 'Oleo Script', cursive;
+    /* font-family: 'Architects Daughter', cursive; */
+  color: #D7942F;
+  text-decoration: underline;
+  text-align: center;
+  font-size: 50px;
    }
 
    .Plate-Name {
@@ -359,12 +433,14 @@ background: linear-gradient(229deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 
     font-size: 20px;
     text-align: center;
    }
-    
-   
 
 
 
-   
+
+
+
+
+  /* +++++++++++++++++++++++++++++++++++++++++      RESPONSIVE    +++++++++++++++++++++++++++++++++  */
 @media screen and (min-width:1270px) {
     .body-page-index {
         width:100vw;
@@ -396,7 +472,7 @@ background: linear-gradient(229deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 
          margin-top: 6%;
     }
 
-    /* Login Page  */
+    /* Login Page  -----------------------------------------------------*/
     .body-page-Login {
 
         width: 100vw;
@@ -442,4 +518,96 @@ background: linear-gradient(229deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 
     .Login-Title h1 {
         font-size: 50px;
     }
+
+
+
+    /* page menu ------------------------------------ */
+
+
+    .Container-Two-Plate {
+        display: grid;
+    width: 60%;
+    height: 70vh;
+        grid-template-columns: 50% 50% ;
+        grid-template-rows: 1fr ;
+        border: 2px double #FEA82F ;
+    margin: 2% 9% 0% 19%;
+      }
+
+
+      .Plate-One{ 
+        grid-column: 1/2;
+        grid-row: 1;
+      }
+
+    .Plate-Two{
+grid-column: 2/3;
+grid-row: 1;
+    }
+
+    .day { 
+        position: relative;
+          Top: 6vh;
+          left: 47%;
+          width: 10vw;
+    }
+
+/* HEADER */
+    .List-Menu {
+        justify-self: center;
+           grid-column: 2/3;
+    
+         }
+         .header-Menu{
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           grid-template-rows: 1fr ;
+         }
+   
+
+
+
+         /*-----------------------   FEEDBACK  PAGE  ----------------------------- */
+  
+
+         .Container-All-Plates { 
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+           flex-wrap: wrap;
+         }
+
+
+
+         
+.Container-Plate-feed {
+    height: 55%;
+    width: 20%;
+    display: inline-block;
+    border:2px double #F0A729;
+    margin-bottom: 4%;
+}
+
+
+
+.Plate-image {
+margin: 2% 0% 0% 8%;
+width: 80%;
+height: 40%;
+border-radius: 10PX;
+
+}
+
+.Plate-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3%;
+    /* border: 1px solid white; */
+    color:#ffffff;
+    width: 95%;
+   
+}
+
+
 }
