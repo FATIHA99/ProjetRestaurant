@@ -11,7 +11,7 @@
     display: grid;
     grid-template-columns: 1fr ;
     color: white;
-    background-color: black;
+    background-color: rgb(39, 32, 32);
     
     
 }
@@ -113,6 +113,10 @@
      border-radius: 10px;
      margin-left: 25%;
  }
+ .section1_ .border{
+     border: 2px solid white;
+     
+ }
  
  .Reserv-section1 h5 {
      margin-left: 28%;
@@ -138,6 +142,7 @@
     justify-content: space-between;
     margin-bottom: 15px;
     align-items: center;
+    border-bottom: 1px solid white;
 }
 .section2_cont .names {
     margin: 10px 0px;
@@ -175,8 +180,6 @@
         display: flex;
         justify-content: space-evenly;
     }
-        
-    
     }
 
 
