@@ -295,9 +295,31 @@ align-items: center;
 
 
 /* ------------------------ Page Menu -------------------------------------- */
+  
+
+
+
+/* radio button  */
+input[type=radio] {
+    border: 0px;
+    width: 100%;
+    height: 2em;
+}
+#radio1 {
+    position: relative;
+    top: 1vh;
+    left: 33vw;
+}
+#radio2 {
+    position: relative;
+    top: 1vh;
+    left: 33vw;
+}
+
+
 
 /* Logo */
-
+ 
  .Logo-Page-Menu {
         width: 280px;
         height: 90px;
@@ -357,7 +379,7 @@ width: 90%;
     grid-template-columns: 100% ;
     grid-template-rows: 1fr 1fr ;
     border: 2px double #FEA82F ; 
-    border-radius: 30% 30% 0% 0%;
+    /* border-radius: 30% 30% 0% 0%; */
 margin: 5% 4% 19% 4%;
   }
    .Plate-One{ 
@@ -409,12 +431,12 @@ margin: 5% 4% 19% 4%;
  
   .day { 
       position: relative;
-        Top: 5vh;
-        left: 38%;
+       Top: 5vh;
+       left: 38%;
        background-color: #CE3232;
        width:30%;
        height: 4%;
-      text-align: center;
+       text-align: center;
        border-radius: 15px;
        color: #fff;
        font-size: 20px;
@@ -429,7 +451,37 @@ margin: 5% 4% 19% 4%;
   text-decoration: underline;
   text-align: center;
   font-size: 50px;
+
+    animation: light 1.5s ease-in-out infinite alternate;
+    
    }
+
+   @keyframes light {
+    from{
+        color: #fff;
+        text-shadow:0 0 10px #00FFF2 ,
+        0 0 20px #e6b30c ,
+        0 0 30px #f7ce1b ,
+        /* 0 0 40px #fdf8f6,
+        0 0 50px #ffffff, 
+        0 0 60px #fdfaf9,  */
+        0 0 70px #0e0d0c, 
+        0 0 90px #080605;
+
+    }
+    /*  to{
+        color: lightgray;
+        text-shadow:  0 0 20px #00fff2;
+      0 0 30px #00fff2,
+        0 0 40px #00fff2,
+        0 0 50px #00fff2,
+       
+        0 0 60px #00fff2,
+        0 0 70px #00fff2,
+        0 0 80px #00fff2,
+        0 0 90px #00fff2; 
+    }*/
+}
 
    .Plate-Name {
     font-family: 'Oleo Script', cursive;
@@ -457,6 +509,17 @@ color :black;
 
   /* +++++++++++++++++++++++++++++++++++++++++      RESPONSIVE    +++++++++++++++++++++++++++++++++  */
 @media screen and (min-width:1270px) {
+
+    #radio1 {
+        /* position: relative;
+        top: 1vh; */
+        left: 10vw;
+    }
+    #radio2 {
+        position: relative;
+        top: 1vh;
+        left: 10vw;
+    }
     .body-page-index {
         width:100vw;
         height:100vh;  
@@ -488,6 +551,10 @@ color :black;
     }
 
     /* Login Page  -----------------------------------------------------*/
+    /* Radio button  */
+
+
+    
     .body-page-Login {
 
         width: 100vw;
