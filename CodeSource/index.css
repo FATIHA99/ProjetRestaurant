@@ -8,9 +8,7 @@
     box-sizing: border-box;
 
 }
-
-
-/*  ------------------------   Page Index   ---------------------------*/
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   Page Index   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 .Logo-Image {
     width: 160px;
     height: 70px;
@@ -21,7 +19,6 @@
     list-style: none;
     margin-left: 30px;
     font-size: 20px;
-    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
 }
 .List-Header ul li a {
     color:#F0A729;
@@ -76,23 +73,7 @@
     grid-template-columns: 1FR 1fr 1fr;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*  ------------------------page login  ---------------------------*/
-
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   page login   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 .Logo-Page-Login {
  
     width: 280px;
@@ -111,14 +92,12 @@
     justify-self: center;
 }
 .body-page-Login {
-    /* background: linear-gradient( to left , ) */
     width: 100vw;
     height: 100vh;
     background: linear-gradient(to left, black 0 50%, black 50% 100%);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 10% 10% 80%;
-
 }
 
 .Image-Table  {
@@ -133,11 +112,9 @@
     background-color: white;
     border-radius: 60px 0px 60px 0px;
     padding: 10%;
-    height: 94%;
+    height: 84%;
   
 }
-
-
 .loginBox input{
     width: 100%;
     margin-bottom: 20px;
@@ -191,9 +168,7 @@
     outline: none;
 }
 
-
-/* page feedback --------------------------------- */
-
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   page feedback    xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 
 .Small-Dascription-feed h1 {
  color: #FFFECB;
@@ -220,15 +195,8 @@ border-radius: 10PX;
     color: #FFFECB;
  }
 .Plate-info {
-    
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: center; */
     margin: 3%;
-    /* border: 1px solid white; */
-    /* color:#ffffff; */
     width: 95%;
-   
 }
 .Plate-info h2 {
     font-family: 'Oleo Script', cursive;
@@ -263,15 +231,13 @@ align-items: center;
 .checked {
     color: orange;
    
-  }
-  .NoCheck {
+}
+.NoCheck {
       color: white;
-  }
-  .fa {
-    font-size: 25px;
-  }
-  
-
+}
+.fa {
+    font-size: 25%;
+}
 .Send-Btn {
  
     display: flex;
@@ -280,78 +246,52 @@ align-items: center;
     width: 100vw;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ------------------------ Page Menu -------------------------------------- */
-  
-
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   Page Menu   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 /* radio button  */
 input[type=radio] {
     border: 0px;
     width: 20%;
     height: 2em;
 }
-#radio1 {
+.radio1 {
     position: relative;
     top: 1vh;
     left: 63vw;
-    width: 20%;
-    height: 2em;
-}
-#radio2 {
-    position: relative;
-    top: 1vh;
-    left: 63vw;
-    width: 20%;
-    height: 2em;
-}
-
-
-
-/* Logo */
  
- .Logo-Page-Menu {
+}
+.radio2 {
+    position: relative;
+    top: 1vh;
+    left: 63vw;
+ 
+}
+/* Logo */
+.Logo-Page-Menu {
         width: 280px;
         height: 90px;
-    }
-    .Logo-Image-PageMenu {
+}
+.Logo-Image-PageMenu {
       width: 280px;
       height: 90px;
       grid-column: 1/2;
       justify-self: center;
     
-    }
+}
 
 /* list */
-    .List-Menu  ul li {
-        display: inline-flex;
-        color: #FEA82F;
-        list-style: none;
-        margin-left: 40px;
-        margin-top: 8%;
-        font-size: 20px;
-        /* font-family: 'Architects Daughter', cursive;
-          font-family: 'Oleo Script', cursive; */
-        font-family: fantasy;
-     
-        align-self: center;
-    }
+.List-Menu  ul li {
+      display: inline-flex;
+      color: #FEA82F;  
+      list-style: none;
+      margin-left: 40px;  
+      margin-top: 8%;
+      font-size: 20px;
+      font-family: fantasy;
+      align-self: center;
+}
 
-    .List-Menu  ul li a {
-        
-        color:#FEA82F;
+    .List-Menu  ul li a { 
+           color:#FEA82F;
            font-weight: 1;
            text-decoration: none;
     }
@@ -360,11 +300,9 @@ input[type=radio] {
         text-decoration:underline;
     }
     .List-Menu {
-
-  
       grid-column: 1/3;
-   height: 50PX;
-   height: 80px;
+      height: 50PX;
+      height: 80px;
     }
     .header-Menu{
       display: grid;
@@ -376,16 +314,14 @@ input[type=radio] {
   /* PLATE */
   .Container-Two-Plate {
     display: grid;
-width: 90%;
+    width: 90%;
     grid-template-columns: 100% ;
     grid-template-rows: 1fr 1fr ;
     border: 2px double #FEA82F ; 
-    /* border-radius: 30% 30% 0% 0%; */
-margin: 5% 4% 19% 4%;
+    margin: 5% 4% 19% 4%;
   }
    .Plate-One{ 
        grid-column: 1/2;
-       /* background: #F8C174; */
        background: linear-gradient(to left,#FEA82F,white );
        border-radius: 150px 0px 150px 0px;
        width: 300px;
@@ -393,14 +329,12 @@ margin: 5% 4% 19% 4%;
        margin-top: 7%;
        justify-self: center;
        border-top: 5px solid #CE3232;
-       border-right: 5px solid #CE3232;
-       
+       border-right: 5px solid #CE3232;  
    }
    .Plate-Two{
     background: linear-gradient(to right,#FEA82F,white );
     justify-self: center;
     grid-row: 2/3;
-    /* background: #F8C174; */
     border-radius: 150px 0px 150px 0px;
     width: 300px;
     height: 350px;
@@ -412,7 +346,6 @@ margin: 5% 4% 19% 4%;
 /* images  */
 .Image-Plate-One {
     width: 240px; 
-    /* border-radius: 70px; */
     border-radius: 100px 0px 100px 0px;
     margin: 5%;
     margin-left: 13%; 
@@ -447,20 +380,18 @@ margin: 5% 4% 19% 4%;
    .Title-Menu {
        margin-bottom: 2%;
        font-family: 'Oleo Script', cursive;
-    /* font-family: 'Architects Daughter', cursive; */
-  color: #FFFECB;
-  text-decoration: underline;
-  text-align: center;
-  font-size: 50px;
-
-    animation: light 1.5s ease-in-out infinite alternate;
+      color: #FFFECB;
+      text-decoration: underline;
+      text-align: center;
+      font-size: 50px;
+      animation: light 1.5s ease-in-out infinite alternate;
     
    }
 
    @keyframes light {
     from{
         color: #fff;
-        text-shadow:0 0 10px #00FFF2 ,
+        text-shadow:0 0 10px #e6be10 ,
         0 0 20px #e6b30c ,
         0 0 30px #f7ce1b ,
         /* 0 0 40px #fdf8f6,
@@ -503,22 +434,15 @@ color :black;
     height: 43%;
 }
 
-
-
-
-
-
   /* +++++++++++++++++++++++++++++++++++++++++      RESPONSIVE    +++++++++++++++++++++++++++++++++  */
 @media screen and (min-width:1270px) {
-
-    #radio1 {
+    .radio1 {
         /* position: relative;
         top: 1vh; */
         left: 19vw;
     }
-    #radio2 {
-        /* position: relative;
-        top: 1vh; */
+    .radio2 {
+   
         left: 19vw;
     }
     .body-page-index {
@@ -553,9 +477,6 @@ color :black;
 
     /* Login Page  -----------------------------------------------------*/
     /* Radio button  */
-
-
-    
     .body-page-Login {
 
         width: 100vw;
@@ -612,22 +533,20 @@ color :black;
     .Container-Two-Plate {
         display: grid;
         width: 60%;
-         height: 70vh;
+         /* height: 60vh; */
         grid-template-columns: 50% 50% ;
         grid-template-rows: 1fr ;
         border: 2px double #FEA82F ;
         margin: 2% 9% 0% 19%;
       }
-
-
       .Plate-One{ 
         grid-column: 1/2;
         grid-row: 1;
       }
 
     .Plate-Two{
-grid-column: 2/3;
-grid-row: 1;
+     grid-column: 2/3;
+     grid-row: 1;
     }
 
     .day { 
@@ -694,39 +613,4 @@ border-radius: 10PX;
     align-content: center;
 }
 
-
-
 }
-
-/* responsive on iPad air  */
-/* @media screen and (min-width:820px) {
-
-    input[type=radio] {
-  
-        width: 20%;
-        height: 2em;
-    }
-    #radio1 {
-    
-        top: 1vh;
-        left: 30vw;
-    }
-    #radio2 {
-     
-        top: 1vh;
-        left: 30vw;
-    }
-  
-      .Container-Two-Plate {
-    
-    width: 50%;
-        grid-template-columns: 100% ;
-        grid-template-rows: 1fr 1fr ;
-     
-      
-    margin: 5% 4% 19% 26%;
-      }
-      
-
-    
-} */
