@@ -7,7 +7,7 @@
     <meta name="description" content="Le site officiel de restauration de l'école YouCode / Si vous etes actuellement  un étiduant  YouCode creer votre compte et commencer par reservée votre plat  "> 
     <meta name="keywords" content="Repat , manger , plats , reservation">
     <title>Page Reservation</title>
-    <link rel="stylesheet" href="stylereservation.css">
+    <link rel="stylesheet" href="styleReser-admin.css">
     <link rel="icon" href="Ressources/ICON.png">
 </head>
 <body>
@@ -17,51 +17,49 @@
                 <img class="logo" src="Ressources/logo.png" alt="Webpage's Logo">
             </div>
             <ul>
-                <li><a href="#">MENU</a></li>
-                <li><a href="#">EVALUEZ NOUS</a></li>
+                <li><a href="PageMenu.html">MENU</a></li>
+                <li><a href="PageFeedBck.html">EVALUEZ NOUS</a></li>
                 <li><a href="#">DECONNEXION</a></li>
             </ul>
-        </header> 
+        </header> g
         <main>
         <section class="Reserv-section1">
             <div class="section1_ section1_container1">
                 <h1 class="title title1">PAGE</h1>
                 <h1 class="title">RESERVATION</h1>
-                <pre class="para">
-ICI VOUS TREVOUREZ TOUT
-
-LES RESERVATIONS PAR 
-
-JOUR DES ETUDIANTS
-                </pre>
+                <p class="para">
+                    Ici Vous Retrouverez Tous <br> les Reservations  Par <br> Jour Des étudiants
+                </p>
             </div> 
             <div class="section1_ section1_container2">
-                <label for="date-time"></label>
-               <input type="date" name="" id="date-time">
+                <label for="date-time">.</label>
+               <input type="date" name="date" id="date-time">
                 <table>
                     <tr>
                         <th class="border">Plat</th>
                         <th class="border">Reservation  </th>
                     </tr>
                     <tr>
-                        <td class="border"><img class="couscous" src="Ressources/s3.png" alt="Couscous image">
-                            <h6 class="h6_1">COUSCOUS</h6>
+                        <td class="border"><img class="couscous" src="Ressources/couscous.png" alt="Couscous image">
+                            <span class="h6_1">COUSCOUS</span>
                         </td>
                         <td class="border">
-                            <h5>Nombre de reservations</h5>
-                            <input class="input" type="number" value="100" disabled >
+                            <h2>Nombre de reservation</h2>
+                            <label for="button1">.</label>
+                            <input class="input" type="number" value="100" id="button1" readonly>
                             <button class="button" type="submit">Inspect</button>
                         
                         </td>
                     </tr>
                     <tr>
-                        <td class="border"><img class="plates tajine" src="Ressources/s2.png" alt="Tajine image">
-                            <h6 class="h6_2">Tajine</h6>
+                        <td class="border"><img class="plates tajine" src="Ressources/tajine.png" alt="Tajine image">
+                            <span class="h6_1">Tajine</span>
                         </td>
                         
                         <td class="border">
-                            <h5>Nombre de reservations</h5>
-                            <input class="input" type="number" value="90" disabled >
+                            <h2>Nombre de reservation</h2>
+                            <label for="button2">.</label>
+                            <input class="input" type="number" value="90"  id="button2" readonly >
                             <button class="button" type="submit">Inspect</button>
                         </td>
                     </tr>
