@@ -3,7 +3,6 @@
   padding: 0px;
   box-sizing: border-box;
   @import url("https://fonts.googleapis.com/css2?family=Karla:wght@800&display=swap");
- 
 }
 /********* For Mobile and Tablettes layouts *********/
 /****** Reservation page style ********/
@@ -35,6 +34,9 @@
   justify-content: space-between;
   grid-column: 1/ 7;
   grid-row: 2/2;
+}
+.Reserv-header ul a {
+  color: white;
 }
 /********* Style for section1 *******/
 .Reserv-section1 {
