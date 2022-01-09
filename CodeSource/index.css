@@ -297,23 +297,25 @@ align-items: center;
 /* ------------------------ Page Menu -------------------------------------- */
   
 
-
-
 /* radio button  */
 input[type=radio] {
     border: 0px;
-    width: 100%;
+    width: 20%;
     height: 2em;
 }
 #radio1 {
     position: relative;
     top: 1vh;
-    left: 33vw;
+    left: 63vw;
+    width: 20%;
+    height: 2em;
 }
 #radio2 {
     position: relative;
     top: 1vh;
-    left: 33vw;
+    left: 63vw;
+    width: 20%;
+    height: 2em;
 }
 
 
@@ -334,7 +336,6 @@ input[type=radio] {
 
 /* list */
     .List-Menu  ul li {
-    
         display: inline-flex;
         color: #FEA82F;
         list-style: none;
@@ -498,7 +499,7 @@ color :black;
     position: absolute;
     top: 7%;
     left: 70%;
-    width: 43%;
+    width: 20%;
     height: 43%;
 }
 
@@ -513,12 +514,12 @@ color :black;
     #radio1 {
         /* position: relative;
         top: 1vh; */
-        left: 10vw;
+        left: 19vw;
     }
     #radio2 {
-        position: relative;
-        top: 1vh;
-        left: 10vw;
+        /* position: relative;
+        top: 1vh; */
+        left: 19vw;
     }
     .body-page-index {
         width:100vw;
@@ -696,3 +697,36 @@ border-radius: 10PX;
 
 
 }
+
+/* responsive on iPad air  */
+/* @media screen and (min-width:820px) {
+
+    input[type=radio] {
+  
+        width: 20%;
+        height: 2em;
+    }
+    #radio1 {
+    
+        top: 1vh;
+        left: 30vw;
+    }
+    #radio2 {
+     
+        top: 1vh;
+        left: 30vw;
+    }
+  
+      .Container-Two-Plate {
+    
+    width: 50%;
+        grid-template-columns: 100% ;
+        grid-template-rows: 1fr 1fr ;
+     
+      
+    margin: 5% 4% 19% 26%;
+      }
+      
+
+    
+} */
