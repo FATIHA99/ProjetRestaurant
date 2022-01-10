@@ -1,0 +1,1594 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Oleo+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Spline+Sans:wght@500&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/********* For Mobile and Tablettes layouts *********/
+/****** Reservation page style ********/
+.Reserv-all{
+  background: rgb(255,255,255);
+  background: linear-gradient(151deg, rgba(255,255,255,1) 11%, rgba(0,0,0,1) 11%);
+
+}
+.Reserv-all {
+  display: grid;
+  grid-template-columns: 1fr;
+ 
+}
+/******** HEADER ************/
+.Reserv-header {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr auto;
+}
+.Reserv-header .logo {
+  width: 200px;
+}
+.Reserv-header div {
+  grid-column: 2 /4;
+}
+.Reserv-header ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  grid-column: 1/ 7;
+  grid-row: 2/2;
+}
+.Reserv-header ul a {
+  color: white;
+}
+/********* Style for section1 *******/
+.Reserv-section1 {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.Reserv-section1 .section1_container1 {
+  grid-column: 2/ 10;
+  padding-left: 2%;
+  padding-top: 10%;
+}
+.Reserv-section1 .section1_container2 {
+  grid-column: 2/ 10;
+}
+.Reserv-section1 td , th {
+  border: 2px solid white;
+}
+
+
+.section1_ .couscous {
+  margin-left: 30%;
+  width: 50%;
+}
+.section1_ .tajine {
+  margin-left: 25%;
+  width: 60%;
+}
+
+.Reserv-section1 .h6_1 {
+  color: white;
+  display: block;
+  margin-left: 35%;
+  letter-spacing: 3px;
+  
+}
+.border h2 {
+  font-size: 0.3em;
+  margin-left: 20%;
+}
+.Reserv-section1 .button {
+  display: block;
+  padding: 5px;
+  border-radius: 10px;
+  border: 0px;
+  background-color: orange;
+  margin-left: 33%;
+  cursor: pointer;
+}
+.section1_ .input {
+  background-color:rgba(255, 255, 255, 0.719) ;
+  color: black;
+  text-align: center;
+  margin: 15px 0px;
+  width: 70%;
+  border-radius: 0 10px;
+  margin-left: 10%;
+}
+
+.Reserv-section1 .title {
+  letter-spacing: 4px;
+  margin-bottom: 15px;
+}
+.title1 {
+  margin-left: 25%;
+}
+.section1_ h1 {
+  font-size: 2em;
+}
+
+
+
+.Reserv-section1 .para {
+  letter-spacing: 3px;
+  line-height: 35px;
+}
+.Reserv-section1 #date-time {
+  margin-bottom: 10px;
+  background-color: hsl(39deg 100% 51% / 91%);
+  border-radius: 10px;
+  margin-left: 25%;
+}
+
+/*********** Section 2 and 3************/
+.studentsImages {
+  width: 10%;
+  border-radius: 40px;
+}
+.section2_container {
+  width: 79vw;
+  margin: 20px auto;
+}
+.section2_container .platebox {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid white;
+}
+.section2_cont {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  align-items: center;
+  border-bottom: 2px solid white;
+}
+.section2_cont .names {
+  margin: 10px 0px;
+}
+
+/****** Admin page style ********/
+/*** Setting the full environement work *****/
+.admin-fullContainer {
+  display: inline-block;
+}
+/******* Styling the aside bar *********/
+.img >img {
+  width: 80%;
+}
+.admin .asidebarC {
+  position: fixed;
+  height: 100vh;
+  width: 20vw;
+  background: black;
+}
+.admin-Container {
+  background: rgb(41,24,24);
+  background: linear-gradient(140deg, rgba(41,24,24,1) 4%, rgba(255,255,255,1) 4%, rgba(255,255,255,1) 100%);
+  min-width: 75vw;
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: 10vh 1fr 4fr;
+  grid-row-gap: 30px;
+}
+.asidebarContentC {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  text-align: center;
+}
+.asidebarContentC a {
+ color: white;
+ font-size: 0.7rem;
+}
+.asidebarContentC a,
+.header a , .Reserv-header ul li a , .Reserv-section1 .para , .Reserv-section1 .h6_1 {
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+.asidebarContentC .border {
+  padding: 10% 0;
+  border-bottom: 1px solid white;
+}
+/******* Styling the header *********/
+.admin .header {
+  grid-column: 3/12;
+}
+.admin .header ul a {
+  color: black;
+}
+.admin .header ul .Menu {
+  color: inherit;
+}
+.admin .header ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/********* Section 1 ***********/
+.admin .section1 {
+  grid-column: 2/12;
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(3,1fr) 30px ;
+  row-gap: 50px;
+ 
+}
+
+.admin .section1 .cards {
+  border: 3px solid black;
+  box-shadow: 0px 6px 2px 2px rgb(0 0 0 / 20%);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.admin .section1 .card1 {
+  grid-column: 3/11;
+  
+}
+.admin .section1 .card2 {
+  grid-column: 3/11;
+}
+.admin .section1 .card3 {
+  grid-column: 3/11;
+}
+.admin .section1 span {
+  font-size: 3rem;
+}
+.admin .section1 .cards h1,
+span {
+  color: black;
+  font-size: 0.8em;
+}
+/******* Style Section2******\\\\\\\\\*/
+.admin .section2 {
+  grid-column: 3/12;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  
+  
+}
+.admin .section2 .imageC {
+  grid-column: 1/11;
+}
+
+.admin .section2 .back  {
+  width: 100%;
+  height: 35%;
+}
+.admin .section2 .usersDataC {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.admin .section2 .input {
+  margin-top: 50px;
+  width: 70%;
+  height: 40px;
+  border-radius: 12px;
+  border: 0px;
+  background-color: rgb(14, 10, 10);
+  text-align: center;
+}
+.admin .section2 .section2C {
+  box-shadow: 6px 5px 2px 2px rgb(0 0 0 / 20%);
+  border-radius: 10px;
+  grid-column: 2/10;
+  height: 76vh;
+  overflow: auto;
+  overflow-x: hidden;
+  margin-top: -1100px;
+}
+.admin .section2 .manageC {
+  display: flex;
+  justify-content: space-evenly;
+}
+.admin .section2 .Cont {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.admin .section2 .Cont {
+  border-bottom: 3px solid black;
+}
+.admin .section2 .Cont1 {
+  border-right: 3px solid black;
+}
+.admin .section2 i {
+  width: 28%;
+}
+.admin .section2 .wrongIco {
+  width: 30%;
+}
+.admin .section2  img {
+  width: 70%;
+}
+
+.section2 .users {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  border-bottom: 3px solid black;
+}
+.section2 .spanX {
+  margin: 0px;
+  padding: 10px;
+}
+.section2 .users img {
+  width: 20%;
+  border-radius: 40%;
+}
+.section2 .iconC {
+  border: 1px solid black;
+  display: flex;
+}
+.section2 .iconC i {
+  width: 10%;
+  height: 20%;
+}
+.section2 .iconC i::hoover {
+    cursor: pointer;
+  }
+.section2 .users .icons {
+  height: 40px;
+  width: 40px;
+}
+/* For Desktops layouts */
+@media (min-width: 800px) {
+  /****** Reservation page style ********/
+  .Reserv-header {
+    grid-template-rows: 60px;
+  }
+  .Reserv-header div {
+    grid-column: 1 /3;
+  }
+  .Reserv-header ul {
+    position: relative;
+    bottom: 29px;
+    grid-column: 4/ 7;
+    margin-right: 10%;
+  }
+  .Reserv-section1 {
+    grid-template-rows: 1fr;
+  }
+  .Reserv-section1 .section1_container1 {
+    grid-column: 2/ 5;
+
+    padding-left: 7%;
+    padding-top: 10%;
+  }
+  .Reserv-section1 .section1_container2 {
+    grid-column: 7/ 10;
+  }
+  .section2_cont {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .border h2 {
+    font-size: 0.5rem;
+    
+  }
+  /*************** Admin page style ***********************/
+  .admin .header {
+    grid-column: 5/12;
+  }
+  .admin .header ul .Menu {
+    color: black;
+  }
+  .asidebarContentC a {
+    color: white;
+    font-size: 1rem;
+   }
+  .admin .section1 {
+      grid-template-rows: 1fr;
+  }
+  .admin-Container {
+    background: rgb(41,24,24);
+background: linear-gradient(140deg, rgba(41,24,24,1) 15%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 100%);
+  }
+  .admin .section1 .card1 {
+    grid-column: 3/5;
+  }
+  .admin .section1 .card2 {
+    grid-column: 6/8;
+  }
+  .admin .section1 .card3 {
+    grid-column: 9/11;
+  }
+  .admin .section2 .imageC {
+    grid-column: 1/6;
+  }
+  .admin .section2 .back {
+    width: 100%;
+    height: 80%;
+  }
+  .admin .section2 .section2C {
+      margin: 0px;
+      grid-column: 6/10;
+      height: 90vh;
+  }
+}
+
+/************Statistiques Style ***************/
+.log-restaurant{
+  width: 300px;
+}
+.body-statistic{
+  margin: 0;
+  font-family: 'Karla', sans-serif;
+  overflow-y: hidden;
+ background-color: white;
+ overflow-y:scroll ;  
+  
+}
+.container i{
+  font-size: 40px ;
+  margin-top: 10px;
+}
+
+
+.main{
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+}
+.aside-menu{
+  width: 30%;
+  border: 6px solid black;
+  background-color: black;
+  height: 100vh;
+}
+.a-menu-statistic{
+  padding: 10px;
+   line-height: 2.5;     /* meaning that the line height will be relative to the font size */
+} 
+.list-menu-statistic .a-menu-statistic {
+  text-decoration: none;
+  color: rgb(254,168,47);
+  font-size: 25px;
+}
+.img-list-menu{
+  width: 250px;
+}
+.nav-menu-statistic{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.a-menu-statistic:hover{
+ color: white;
+}
+.section-content-statistic h1{
+  font-size: 30px;
+}
+.h1-content-statistic{
+  position: absolute;
+  bottom: 80%;
+}
+
+.section-content-statistic{
+  display: flex;
+  width: 70%;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  background-color:rgb(255,237,178);
+
+}
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 20%;
+  height: 45vh;
+  display: flex;
+  background-color: #F2A02D ;
+  border-radius: 20px;
+}
+
+.card:hover {
+  box-shadow: 0 16px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}  
+
+
+
+
+@media only screen and (max-width: 450px){
+.body-statistic{
+  font-family: 'Karla', sans-serif;
+}
+
+.section-content-statistic{
+  display: flex;
+  width: 100vw;
+  height: 100%;
+  padding-bottom: 20px;
+  flex-direction: column;
+  justify-content: unset;
+}
+
+.card{
+  display: flex;
+  width: 50vw;
+ margin: 10px;
+ height: 35vh;
+}
+
+.nav-menu-statistic{
+  display: flex;
+  height: 6vw;
+}
+.log-restaurant{
+width: 52vw;
+}
+.img-list-menu{
+  display: none;
+}
+
+.list-menu-statistic .a-menu-statistic{
+  font-size: 3vw;
+  
+}
+
+.list-menu-statistic{
+  list-style: none;
+}
+
+.aside-menu {
+  width: 97vw;
+  border: 6px solid black;
+  background-color: black;
+  height: 32vw;
+}
+
+.for_img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ul_menu_statistic{
+  display: flex;
+  margin: 0;
+  padding: 0;
+ 
+}
+
+.main_statistic{
+  display: inline-block;
+
+
+}
+
+.h1-content-statistic{
+  position: unset;
+  margin-top: 9vw;
+  font-size: 12vw;
+  
+}
+.a-menu-statistic:hover{
+  color: white;
+}
+
+
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   Page Index   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+.Logo-Image {
+  width: 160px;
+  height: 70px;
+  grid-column: 1/3;
+}
+.List-Header ul li  {
+  display: inline-flex;
+  list-style: none;
+  margin-left: 30px;
+  font-size: 20px;
+}
+.List-Header ul li a {
+  color:#F0A729;
+  font-family: fantasy;
+  text-decoration: none;
+  background-color: black;
+}
+.List-Header ul li a:hover{
+ text-decoration: underline;
+  color: white;
+}
+.List-Header{
+grid-column: 1/4;
+grid-row: 2;
+justify-self:center;
+}
+.Index-header {
+display: grid;
+grid-template-columns: repeat(3,1fr);
+grid-template-rows: 1fr 1fr;
+}
+.Title h1 {
+  color:white;
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Oleo Script', cursive;
+  padding: 4vh;
+  text-align: center;
+}
+.description  {
+  color:white;
+  font-size: 10px;
+  text-align: center;
+  font-family: Verdana;
+}
+.btn-Enter  {
+  width: 120px;
+  height: 30px;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-size: 20px;
+  background-color: #CE3232;
+  grid-column: 2/3;
+  justify-self: center;
+  font-family: 'Architects Daughter', cursive;
+  margin-top: 26%;
+  text-align: center;
+}
+.button {
+  display:grid;
+  grid-template-columns: 1FR 1fr 1fr;
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   page login   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+.Logo-Page-Login {
+
+  width: 280px;
+  height: 100px;
+}
+.Logo-Image-PageLogin {
+width: 280px;
+height: 100px;
+grid-column: 1/2;
+
+}
+.Login-Title {
+
+  grid-row: 2/3;
+  grid-column: 1/2;
+  justify-self: center;
+}
+.body-page-Login {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to left, black 0 50%, black 50% 100%);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10% 10% 80%;
+}
+
+.Image-Table  {
+  display: none;
+}
+.loginBox {
+  margin: 5%;
+  font-family: 'Architects Daughter', cursive;
+
+  grid-row: 3/4;
+  grid-column: 1;
+  background-color: white;
+  border-radius: 60px 0px 60px 0px;
+  padding: 10%;
+  height: 84%;
+
+}
+.loginBox input{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.loginBox input[type="text"], input[type="password"]
+{
+  border: none;
+  border-bottom: 1px solid  black ;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  background-color: rgba(252, 252, 252, 0.918);
+  font-size: 16px;
+}
+.loginBox input[type="submit"]
+{
+  border: none;
+  height: 40px;
+  background: #CE3232;
+  color: #fff;
+  font-size: 25px;
+  margin-top: 30px;
+  border-radius: 60px ;
+  color: #fff;   
+  width: 60%;
+  font-family: 'Architects Daughter', cursive;
+}
+.loginBox input[type="submit"]:hover
+{
+  cursor: pointer;
+  background:linear-gradient(to right,bisque  , rgb(214, 82, 58));
+  color: #000;
+}
+.Login-Title h1 {
+  color: #CE3232;
+  text-decoration: underline;
+  background-color: #000;
+  font-family: 'Oleo Script', cursive;
+  /* font-family: 'Oleo Script', cursive; */
+  font-size:30px;
+  font-weight: 1;
+}
+.Button-Login {
+display: flex;
+justify-content: space-around;
+}
+.Message-Login {
+  border: none;
+  border-bottom: 1px solid  black ;
+  outline: none;
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   page feedback    xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+.Small-Dascription-feed h1 {
+color: #FFFECB;
+font-size: 40px;
+font-family: 'Oleo Script', cursive;
+text-align: center;
+}
+.Container-Plate-feed {
+  height: 55%;
+  width: 50%;
+  display: inline-block;
+  border:2px double #F0A729;
+  margin-bottom: 4%;
+}
+
+.Plate-image {
+margin: 2% 0% 0% 8%;
+width: 80%;
+height: 40%;
+border-radius: 10PX;
+
+}
+pre {
+  color: #FFFECB;
+}
+.Plate-info {
+  margin: 3%;
+  width: 95%;
+}
+.Plate-info h2 {
+  font-family: 'Oleo Script', cursive;
+  text-decoration: underline;
+  font-weight: 1;
+  text-align: center;
+  color:#F0A729;
+}
+.Container-Plate-feed P{
+  color: #FFFECB;
+  text-align: center;
+}
+
+.Container-Plate-feed  textarea{
+background-color: transparent;
+margin-left: 6%;
+color: white;
+border:none;
+border-bottom: 1px solid  #FFFECB;
+border-left:1px solid  #FFFECB ;
+outline: none;
+align-self: center;
+
+}
+.Container-All-Plates {
+
+  display: flex;
+  flex-direction: column;
+align-items: center;
+
+}
+.checked {
+  color: orange;
+ 
+}
+.NoCheck {
+    color: white;
+}
+.fa {
+  font-size: 25%;
+}
+.Send-Btn {
+
+  display: flex;
+  justify-content: center;
+
+  width: 100vw;
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   Page Menu   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/* radio button  */
+input[type=radio] {
+  border: 0px;
+  width: 20%;
+  height: 2em;
+}
+.radio1 {
+  position: relative;
+  top: 1vh;
+  left: 63vw;
+
+}
+.radio2 {
+  position: relative;
+  top: 1vh;
+  left: 63vw;
+
+}
+/* Logo */
+.Logo-Page-Menu {
+      width: 280px;
+      height: 90px;
+}
+.Logo-Image-PageMenu {
+    width: 280px;
+    height: 90px;
+    grid-column: 1/2;
+    justify-self: center;
+  
+}
+
+/* list */
+.List-Menu  ul li {
+    display: inline-flex;
+    color: #FEA82F;  
+    list-style: none;
+    margin-left: 40px;  
+    margin-top: 8%;
+    font-size: 20px;
+    font-family: fantasy;
+    align-self: center;
+}
+
+  .List-Menu  ul li a { 
+         color:#FEA82F;
+         font-weight: 1;
+         text-decoration: none;
+  }
+  .List-Menu  ul li a:hover{
+      color:white;
+      text-decoration:underline;
+  }
+  .List-Menu {
+    grid-column: 1/3;
+    height: 50PX;
+    height: 80px;
+  }
+  .header-Menu{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr ;
+  }
+ 
+
+/* PLATE */
+.Container-Two-Plate {
+  display: grid;
+  width: 90%;
+  grid-template-columns: 100% ;
+  grid-template-rows: 1fr 1fr ;
+  border: 2px double #FEA82F ; 
+  margin: 5% 4% 19% 4%;
+}
+ .Plate-One{ 
+     grid-column: 1/2;
+     background: linear-gradient(to left,#FEA82F,white );
+     border-radius: 150px 0px 150px 0px;
+     width: 300px;
+     height: 350px;
+     margin-top: 7%;
+     justify-self: center;
+     border-top: 5px solid #CE3232;
+     border-right: 5px solid #CE3232;  
+ }
+ .Plate-Two{
+  background: linear-gradient(to right,#FEA82F,white );
+  justify-self: center;
+  grid-row: 2/3;
+  border-radius: 150px 0px 150px 0px;
+  width: 300px;
+  height: 350px;
+  margin-top: 7%;
+  border-right: 5px solid #CE3232;
+  border-top: 5px solid #CE3232;
+}
+
+/* images  */
+.Image-Plate-One {
+  width: 240px; 
+  border-radius: 100px 0px 100px 0px;
+  margin: 5%;
+  margin-left: 13%; 
+  border-right: 5px solid #CE3232;
+  border-top: 5px solid #CE3232;
+ }
+
+ .Image-Plate-Two {
+  width: 240px; 
+  /* border-radius: 70px; */
+  border-radius: 100px 0px 100px 0px;
+  margin: 5%;
+  margin-left: 13%; 
+  border-right: 5px solid #CE3232;
+  border-top: 5px solid #CE3232;
+ }
+
+.day { 
+    position: relative;
+     Top: 5vh;
+     left: 38%;
+     background-color: #CE3232;
+     width:30%;
+     height: 4%;
+     text-align: center;
+     border-radius: 15px;
+     color: #fff;
+     font-size: 20px;
+     font-family: 'Architects Daughter', cursive;
+ }
+
+ .Title-Menu {
+     margin-bottom: 2%;
+     font-family: 'Oleo Script', cursive;
+    color: #FFFECB;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 50px;
+    animation: light 1.5s ease-in-out infinite alternate;
+  
+ }
+
+ @keyframes light {
+  from{
+      color: #fff;
+      text-shadow:0 0 10px #e6be10 ,
+      0 0 20px #e6b30c ,
+      0 0 30px #f7ce1b ,
+      /* 0 0 40px #fdf8f6,
+      0 0 50px #ffffff, 
+      0 0 60px #fdfaf9,  */
+      0 0 70px #0e0d0c, 
+      0 0 90px #080605;
+
+  }
+  /*  to{
+      color: lightgray;
+      text-shadow:  0 0 20px #00fff2;
+    0 0 30px #00fff2,
+      0 0 40px #00fff2,
+      0 0 50px #00fff2,
+     
+      0 0 60px #00fff2,
+      0 0 70px #00fff2,
+      0 0 80px #00fff2,
+      0 0 90px #00fff2; 
+  }*/
+}
+
+ .Plate-Name {
+  font-family: 'Oleo Script', cursive;
+  text-decoration: underline;
+  font-size: 20px;
+  text-align: center;
+  color: #CE3232;
+ }
+ .Plate-Info pre {
+color :black;
+ }
+.girl-image {
+  display: inline-block;
+  position: absolute;
+  top: 7%;
+  left: 70%;
+  width: 20%;
+  height: 43%;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++      RESPONSIVE    +++++++++++++++++++++++++++++++++  */
+@media screen and (min-width:1270px) {
+  .radio1 {
+      /* position: relative;
+      top: 1vh; */
+      left: 19vw;
+  }
+  .radio2 {
+ 
+      left: 19vw;
+  }
+  .body-page-index {
+      width:100vw;
+      height:100vh;  
+      border: none;
+  } 
+  .List-Header{
+      grid-column: 3/4;
+      grid-row: 1;
+      padding: 3%;
+      justify-self: center;
+  }
+  .Index-header {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-template-rows: 1fr;
+  }
+
+  .Title {
+      padding: 10vh;
+  }
+  .description {
+      font-size: 20px;
+  }
+  .btn-Enter {
+       width: 140px;
+       height: 40px;
+       border-radius: 20px;
+       margin-top: 6%;
+  }
+
+  /* Login Page  -----------------------------------------------------*/
+  /* Radio button  */
+  .body-page-Login {
+
+      width: 100vw;
+      height: 100vh;
+      background: linear-gradient(to left, white 0 50%, black 50% 100%);
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: 10% 90%;
+  
+  }
+  .Image-Table  {
+      width: 100%;
+      height: 80%;
+      grid-column: 1/2;
+      grid-row: 2/3;
+      display: block;
+    
+  }
+  
+  svg{
+       width: 100%;
+      height: 100%; 
+     
+  }
+
+  .loginBox {
+     
+      grid-column: 2/3;
+      grid-row: 2/3;
+      padding: 0;
+  }
+  .Login-Title {
+      grid-row: 1/2;
+      grid-column: 2/3;
+    
+  }
+
+  .loginBox input[type="submit"] {
+      width: 30%;
+
+  }
+
+  .Login-Title h1 {
+      font-size: 50px;
+  }
+  .Login-Title h1 {
+      background-color: #fff;
+  }
+
+
+  /* page menu ------------------------------------ */
+
+
+  .Container-Two-Plate {
+      display: grid;
+      width: 60%;
+       /* height: 60vh; */
+      grid-template-columns: 50% 50% ;
+      grid-template-rows: 1fr ;
+      border: 2px double #FEA82F ;
+      margin: 2% 9% 0% 19%;
+    }
+    .Plate-One{ 
+      grid-column: 1/2;
+      grid-row: 1;
+    }
+
+  .Plate-Two{
+   grid-column: 2/3;
+   grid-row: 1;
+  }
+
+  .day { 
+      position: relative;
+        Top: 6vh;
+        left: 47%;
+        width: 10vw;
+  }
+
+/* HEADER */
+  .List-Menu {
+      justify-self: center;
+         grid-column: 2/3;
+  
+       }
+       .header-Menu{
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         grid-template-rows: 1fr ;
+       }
+ 
+
+
+
+       /*-----------------------   FEEDBACK  PAGE  ----------------------------- */
+
+
+       .Container-All-Plates { 
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+         flex-wrap: wrap;
+       }
+ .Container-Plate-feed {
+  height: 55%;
+  width: 20%;
+  display: inline-block;
+  border:2px double #F0A729;
+  margin-bottom: 4%;
+}
+
+.Plate-image {
+margin: 2% 0% 0% 8%;
+width: 80%;
+height: 40%;
+border-radius: 10PX;
+
+}
+
+.Plate-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 3%;
+  /* border: 1px solid white; */
+  color:#ffffff;
+  width: 95%;
+ 
+}
+
+.Send-Btn {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+}
+
+
+/********Creation de Menu ***********/
+
+.skewed {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 255px solid #fff;
+  border-right: 255px solid transparent;
+}
+
+body {
+background-image: url(Ressources/bg.png);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  height: 100vh;
+}
+
+.header_CM {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.img_CM {
+  display: flex;
+  width: 20%;
+  justify-content: center;
+}
+
+.logo_CM {
+  width: 200px;
+}
+.list1_CM {
+  width: 70%;
+  padding-top: 20px;
+}
+.list1_CM ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+.list1_CM ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.dropbtn_CM {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  margin-right: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown_CM {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content_CM {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+}
+
+.dropdown-content_CM a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content_CM a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown_CM:hover .dropdown-content_CM {
+  display: block;
+}
+
+.dropdown_CM:hover .dropbtn_CM {
+  background-color: #ff9900;
+}
+
+.main_CM {
+  width: 100%;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title_CM {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.title_CM p {
+  color: #fff;
+  font-size: clamp(4vw, 1vw, 1vw);
+
+}
+
+.menu_CM {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.titlemenu_CM {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+.titlemenu_CM p {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.titlemenu_CM a {
+  background-color: #ff9900;
+  border-radius: 15px;
+  color: #f1f1f1;
+  text-decoration: none;
+  padding: 10px 10px;
+  cursor: pointer;
+  padding: 10px 10px;
+}
+
+.table_CM {
+  width: 80%;
+  margin-top: 20px;
+}
+
+.time_CM {
+  border: #fff solid 2px;
+  color: #fff;
+  padding: 10px 10px;
+}
+
+.time_CM input {
+  width: 100%;
+  background-color: #ff9900;
+  height: 44px;
+}
+
+.table2_CM {
+  width: 100%;
+}
+
+th,
+td {
+  border: #fff solid 2px;
+  color: #fff;
+  padding: 10px 10px;
+  max-width: 50px;
+}
+
+td img {
+  width: 60%;
+}
+
+.buttons_CM {
+  position: relative;
+  width: 80%;
+  margin-top: 30px;
+  display: flex;
+  
+}
+
+.modifier_CM {
+  width: 50%;
+  text-align: center;
+}
+
+.modifier_CM a,
+.delete_CM a {
+  background-color: #ff9900;
+  border-radius: 15px;
+  color: #f1f1f1;
+  text-decoration: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  padding: 10px 10px;
+}
+
+.delete_CM {
+  width: 50%;
+  text-align: center;
+}
+@media screen and (max-width: 650px) {
+  .header_CM {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+  }
+  .list1_CM {
+      width: 100%;
+      padding-top: 20px;
+  }
+  .dropbtn_CM {
+      background-color: black;
+      color: white;
+      font-size: 20px;
+      font-weight: 400;
+      border: none;
+      cursor: pointer;
+  }
+  .title_CM {
+      display: none;
+  }
+  .skewed {
+      display: none;
+  }
+  .menu_CM {
+      width: 90%;
+  }
+  .titlemenu_CM {
+      flex-direction: column;
+  }
+  .titlemenu_CM a {
+      margin-top: 22px;
+  }
+  .titlemenu_CM p {
+      font-size: 6vw;
+  }
+  .time_CM input {
+      font-size: 40px;
+      text-align: center;
+  }
+}
+
+/*********Page d'ajout style*********/
+
+.sectionYx{
+  width: 100%;
+  height: 100vh;
+}
+
+.img_pgajout{
+    width: 200px;
+}
+.header_pgajout{
+    width: 100%;
+    display: flex;
+    align-items: center;
+ }
+ .li_pgajout ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-left: 90px;
+  }
+  .li_pgajout ul li{
+    justify-content: space-around;
+     margin-right: 60px;
+     margin-left: 80px;
+  }
+  .li_pgajout ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .para{
+      color: white;
+      font-size: xx-large;
+      margin-left: 0px;
+  }
+
+  .glass {
+    position: relative;
+    background: inherit;
+    overflow: hidden;
+    width: 60%;
+    height: 60%;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 
+                0 6px 20px rgba(0, 0, 0, 0.15);
+    z-index: 1;
+    padding: 1px 15px;
+  }
+  
+  .glass:before {
+    content: '';
+    position: absolute;
+    background: inherit;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: -20px;
+    box-shadow: inset 0 0 500px rgba(255, 255, 255, .4); 
+    filter: blur(10px);
+    z-index: -1;
+  }
+
+  .glass h3{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 200;
+  }
+
+  .glass input{
+    width: 70%;
+    padding: 5px 16px;
+  }
+
+  .buttons_CM {
+    display: flex;
+    width: 30%;
+    margin-top: 30px;
+  }
+  
+  .modifier_CM {
+    width: 50%;
+    text-align: center;
+  }
+  .delete_CM{
+    width: 50%;
+    text-align: center;
+  }
+  
+  .buttons_CM a {
+    padding: 6px 16px;
+    background-color: #FF9900;
+    border-radius: 15px;
+    color: #f1f1f1;
+    text-decoration: none;
+  }
+  @media only screen and (max-width: 600px) {
+    .header_pgajout {
+      display: block;
+      width: 0%;
+  
+  }
+  .img_pgajout {
+    width: 132px;
+}
+.li_pgajout ul li {
+  justify-content: space-around;
+  margin-right: 30px;
+  margin-left: 0px;
+}
+.li_pgajout ul li {
+  justify-content: space-around;
+  margin-right: 158px;
+  margin-left: -115px;
+}
+p {
+  color: #ff9900;
+  font-size: xx-large;
+  margin-left: 67px;
+}
+.glass {
+  position: relative;
+  background: inherit;
+  overflow: hidden;
+  width: 91%;
+  height: 60%;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgb(0 0 0 / 30%), 0 6px 20px rgb(0 0 0 / 15%);
+  z-index: 1;
+  padding: 1px 15px;
+}
+.buttons_CM {
+  display: flex;
+  width: 98%;
+  margin-top: 30px;
+}
+.glass input {
+  width: 91%;
+  padding: 5px 16px;
+}
+}
