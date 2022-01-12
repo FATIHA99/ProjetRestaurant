@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Spline+Sans:wght@500&display=swap");
+body{
+  background-image: url(Ressources/bgfati.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Spline Sans", sans-serif;
+  
+}
+
+section{
+  width: 100%;
+  height: 100vh;
+}
+
+.img_pgajout{
+    width: 200px;
+}
+.header_pgajout{
+    width: 100%;
+    display: flex;
+    align-items: center;
+ }
+ .li_pgajout ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-left: 90px;
+  }
+  .li_pgajout ul li{
+    justify-content: space-around;
+     margin-right: 60px;
+     margin-left: 80px;
+  }
+  .li_pgajout ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  p{
+      color: white;
+      font-size: xx-large;
+      margin-left: 0px;
+  }
+
+  .glass {
+    position: relative;
+    background: inherit;
+    overflow: hidden;
+    width: 60%;
+    height: 60%;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 
+                0 6px 20px rgba(0, 0, 0, 0.15);
+    z-index: 1;
+    padding: 1px 15px;
+  }
+  
+  .glass:before {
+    content: '';
+    position: absolute;
+    background: inherit;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: -20px;
+    box-shadow: inset 0 0 500px rgba(255, 255, 255, .4); 
+    filter: blur(10px);
+    z-index: -1;
+  }
+
+  .glass h3{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 200;
+  }
+
+  .glass input{
+    width: 70%;
+    padding: 5px 16px;
+  }
+
+  .buttons_CM {
+    display: flex;
+    width: 30%;
+    margin-top: 30px;
+  }
+  
+  .modifier_CM {
+    width: 50%;
+    text-align: center;
+  }
+  .delete_CM{
+    width: 50%;
+    text-align: center;
+  }
+  
+  .buttons_CM a {
+    padding: 6px 16px;
+    background-color: #FF9900;
+    border-radius: 15px;
+    color: #f1f1f1;
+    text-decoration: none;
+  }
+  @media only screen and (max-width: 600px) {
+    .header_pgajout {
+      display: block;
+      width: 0%;
+  
+  }
+  .img_pgajout {
+    width: 132px;
+}
+.li_pgajout ul li {
+  justify-content: space-around;
+  margin-right: 30px;
+  margin-left: 0px;
+}
+.li_pgajout ul li {
+  justify-content: space-around;
+  margin-right: 158px;
+  margin-left: -115px;
+}
+p {
+  color: #ff9900;
+  font-size: xx-large;
+  margin-left: 67px;
+}
+.glass {
+  position: relative;
+  background: inherit;
+  overflow: hidden;
+  width: 91%;
+  height: 60%;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgb(0 0 0 / 30%), 0 6px 20px rgb(0 0 0 / 15%);
+  z-index: 1;
+  padding: 1px 15px;
+}
+.buttons_CM {
+  display: flex;
+  width: 98%;
+  margin-top: 30px;
+}
+.glass input {
+  width: 91%;
+  padding: 5px 16px;
+}
+}
+
+  
+  
