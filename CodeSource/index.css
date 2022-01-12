@@ -1,0 +1,616 @@
+/* Style de page index login et menu  */
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Oleo+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   Page Index   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+.Logo-Image {
+    width: 160px;
+    height: 70px;
+    grid-column: 1/3;
+}
+.List-Header ul li  {
+    display: inline-flex;
+    list-style: none;
+    margin-left: 30px;
+    font-size: 20px;
+}
+.List-Header ul li a {
+    color:#F0A729;
+    font-family: fantasy;
+    text-decoration: none;
+    background-color: black;
+}
+.List-Header ul li a:hover{
+   text-decoration: underline;
+    color: white;
+}
+.List-Header{
+  grid-column: 1/4;
+  grid-row: 2;
+  justify-self:center;
+}
+.Index-header {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 1fr 1fr;
+}
+.Title h1 {
+    color:white;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Oleo Script', cursive;
+    padding: 4vh;
+    text-align: center;
+}
+.description  {
+    color:white;
+    font-size: 10px;
+    text-align: center;
+    font-family: Verdana;
+}
+.btn-Enter  {
+    width: 120px;
+    height: 30px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 20px;
+    background-color: #CE3232;
+    grid-column: 2/3;
+    justify-self: center;
+    font-family: 'Architects Daughter', cursive;
+    margin-top: 26%;
+    text-align: center;
+}
+.button {
+    display:grid;
+    grid-template-columns: 1FR 1fr 1fr;
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   page login   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+.Logo-Page-Login {
+ 
+    width: 280px;
+    height: 100px;
+}
+.Logo-Image-PageLogin {
+  width: 280px;
+  height: 100px;
+  grid-column: 1/2;
+
+}
+.Login-Title {
+  
+    grid-row: 2/3;
+    grid-column: 1/2;
+    justify-self: center;
+}
+.body-page-Login {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to left, black 0 50%, black 50% 100%);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 10% 80%;
+}
+
+.Image-Table  {
+    display: none;
+}
+.loginBox {
+    margin: 5%;
+    font-family: 'Architects Daughter', cursive;
+
+    grid-row: 3/4;
+    grid-column: 1;
+    background-color: white;
+    border-radius: 60px 0px 60px 0px;
+    padding: 10%;
+    height: 84%;
+  
+}
+.loginBox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.loginBox input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid  black ;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    background-color: rgba(252, 252, 252, 0.918);
+    font-size: 16px;
+}
+.loginBox input[type="submit"]
+{
+    border: none;
+    height: 40px;
+    background: #CE3232;
+    color: #fff;
+    font-size: 25px;
+    margin-top: 30px;
+    border-radius: 60px ;
+    color: #fff;   
+    width: 60%;
+    font-family: 'Architects Daughter', cursive;
+}
+.loginBox input[type="submit"]:hover
+{
+    cursor: pointer;
+    background:linear-gradient(to right,bisque  , rgb(214, 82, 58));
+    color: #000;
+}
+.Login-Title h1 {
+    color: #CE3232;
+    text-decoration: underline;
+    background-color: #000;
+    font-family: 'Oleo Script', cursive;
+    /* font-family: 'Oleo Script', cursive; */
+    font-size:30px;
+    font-weight: 1;
+}
+.Button-Login {
+  display: flex;
+  justify-content: space-around;
+}
+.Message-Login {
+    border: none;
+    border-bottom: 1px solid  black ;
+    outline: none;
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   page feedback    xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+.Small-Dascription-feed h1 {
+ color: #FFFECB;
+ font-size: 40px;
+ font-family: 'Oleo Script', cursive;
+ text-align: center;
+}
+.Container-Plate-feed {
+    height: 55%;
+    width: 50%;
+    display: inline-block;
+    border:2px double #F0A729;
+    margin-bottom: 4%;
+}
+
+.Plate-image {
+margin: 2% 0% 0% 8%;
+width: 80%;
+height: 40%;
+border-radius: 10PX;
+
+}
+ pre {
+    color: #FFFECB;
+ }
+.Plate-info {
+    margin: 3%;
+    width: 95%;
+}
+.Plate-info h2 {
+    font-family: 'Oleo Script', cursive;
+    text-decoration: underline;
+    font-weight: 1;
+    text-align: center;
+    color:#F0A729;
+}
+.Container-Plate-feed P{
+    color: #FFFECB;
+    text-align: center;
+}
+
+.Container-Plate-feed  textarea{
+ background-color: transparent;
+ margin-left: 6%;
+ color: white;
+ border:none;
+ border-bottom: 1px solid  #FFFECB;
+ border-left:1px solid  #FFFECB ;
+ outline: none;
+ align-self: center;
+ 
+}
+.Container-All-Plates {
+
+    display: flex;
+    flex-direction: column;
+align-items: center;
+
+}
+.checked {
+    color: orange;
+   
+}
+.NoCheck {
+      color: white;
+}
+.fa {
+    font-size: 25%;
+}
+.Send-Btn {
+ 
+    display: flex;
+    justify-content: center;
+
+    width: 100vw;
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   Page Menu   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/* radio button  */
+input[type=radio] {
+    border: 0px;
+    width: 20%;
+    height: 2em;
+}
+.radio1 {
+    position: relative;
+    top: 1vh;
+    left: 63vw;
+ 
+}
+.radio2 {
+    position: relative;
+    top: 1vh;
+    left: 63vw;
+ 
+}
+/* Logo */
+.Logo-Page-Menu {
+        width: 280px;
+        height: 90px;
+}
+.Logo-Image-PageMenu {
+      width: 280px;
+      height: 90px;
+      grid-column: 1/2;
+      justify-self: center;
+    
+}
+
+/* list */
+.List-Menu  ul li {
+      display: inline-flex;
+      color: #FEA82F;  
+      list-style: none;
+      margin-left: 40px;  
+      margin-top: 8%;
+      font-size: 20px;
+      font-family: fantasy;
+      align-self: center;
+}
+
+    .List-Menu  ul li a { 
+           color:#FEA82F;
+           font-weight: 1;
+           text-decoration: none;
+    }
+    .List-Menu  ul li a:hover{
+        color:white;
+        text-decoration:underline;
+    }
+    .List-Menu {
+      grid-column: 1/3;
+      height: 50PX;
+      height: 80px;
+    }
+    .header-Menu{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr ;
+    }
+   
+
+  /* PLATE */
+  .Container-Two-Plate {
+    display: grid;
+    width: 90%;
+    grid-template-columns: 100% ;
+    grid-template-rows: 1fr 1fr ;
+    border: 2px double #FEA82F ; 
+    margin: 5% 4% 19% 4%;
+  }
+   .Plate-One{ 
+       grid-column: 1/2;
+       background: linear-gradient(to left,#FEA82F,white );
+       border-radius: 150px 0px 150px 0px;
+       width: 300px;
+       height: 350px;
+       margin-top: 7%;
+       justify-self: center;
+       border-top: 5px solid #CE3232;
+       border-right: 5px solid #CE3232;  
+   }
+   .Plate-Two{
+    background: linear-gradient(to right,#FEA82F,white );
+    justify-self: center;
+    grid-row: 2/3;
+    border-radius: 150px 0px 150px 0px;
+    width: 300px;
+    height: 350px;
+    margin-top: 7%;
+    border-right: 5px solid #CE3232;
+    border-top: 5px solid #CE3232;
+}
+  
+/* images  */
+.Image-Plate-One {
+    width: 240px; 
+    border-radius: 100px 0px 100px 0px;
+    margin: 5%;
+    margin-left: 13%; 
+    border-right: 5px solid #CE3232;
+    border-top: 5px solid #CE3232;
+   }
+
+   .Image-Plate-Two {
+    width: 240px; 
+    /* border-radius: 70px; */
+    border-radius: 100px 0px 100px 0px;
+    margin: 5%;
+    margin-left: 13%; 
+    border-right: 5px solid #CE3232;
+    border-top: 5px solid #CE3232;
+   }
+ 
+  .day { 
+      position: relative;
+       Top: 5vh;
+       left: 38%;
+       background-color: #CE3232;
+       width:30%;
+       height: 4%;
+       text-align: center;
+       border-radius: 15px;
+       color: #fff;
+       font-size: 20px;
+       font-family: 'Architects Daughter', cursive;
+   }
+
+   .Title-Menu {
+       margin-bottom: 2%;
+       font-family: 'Oleo Script', cursive;
+      color: #FFFECB;
+      text-decoration: underline;
+      text-align: center;
+      font-size: 50px;
+      animation: light 1.5s ease-in-out infinite alternate;
+    
+   }
+
+   @keyframes light {
+    from{
+        color: #fff;
+        text-shadow:0 0 10px #e6be10 ,
+        0 0 20px #e6b30c ,
+        0 0 30px #f7ce1b ,
+        /* 0 0 40px #fdf8f6,
+        0 0 50px #ffffff, 
+        0 0 60px #fdfaf9,  */
+        0 0 70px #0e0d0c, 
+        0 0 90px #080605;
+
+    }
+    /*  to{
+        color: lightgray;
+        text-shadow:  0 0 20px #00fff2;
+      0 0 30px #00fff2,
+        0 0 40px #00fff2,
+        0 0 50px #00fff2,
+       
+        0 0 60px #00fff2,
+        0 0 70px #00fff2,
+        0 0 80px #00fff2,
+        0 0 90px #00fff2; 
+    }*/
+}
+
+   .Plate-Name {
+    font-family: 'Oleo Script', cursive;
+    text-decoration: underline;
+    font-size: 20px;
+    text-align: center;
+    color: #CE3232;
+   }
+   .Plate-Info pre {
+color :black;
+   }
+.girl-image {
+    display: inline-block;
+    position: absolute;
+    top: 7%;
+    left: 70%;
+    width: 20%;
+    height: 43%;
+}
+
+  /* +++++++++++++++++++++++++++++++++++++++++      RESPONSIVE    +++++++++++++++++++++++++++++++++  */
+@media screen and (min-width:1270px) {
+    .radio1 {
+        /* position: relative;
+        top: 1vh; */
+        left: 19vw;
+    }
+    .radio2 {
+   
+        left: 19vw;
+    }
+    .body-page-index {
+        width:100vw;
+        height:100vh;  
+        border: none;
+    } 
+    .List-Header{
+        grid-column: 3/4;
+        grid-row: 1;
+        padding: 3%;
+        justify-self: center;
+    }
+    .Index-header {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .Title {
+        padding: 10vh;
+    }
+    .description {
+        font-size: 20px;
+    }
+    .btn-Enter {
+         width: 140px;
+         height: 40px;
+         border-radius: 20px;
+         margin-top: 6%;
+    }
+
+    /* Login Page  -----------------------------------------------------*/
+    /* Radio button  */
+    .body-page-Login {
+
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(to left, white 0 50%, black 50% 100%);
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 10% 90%;
+    
+    }
+    .Image-Table  {
+        width: 100%;
+        height: 80%;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        display: block;
+      
+    }
+    
+    svg{
+         width: 100%;
+        height: 100%; 
+       
+    }
+
+    .loginBox {
+       
+        grid-column: 2/3;
+        grid-row: 2/3;
+        padding: 0;
+    }
+    .Login-Title {
+        grid-row: 1/2;
+        grid-column: 2/3;
+      
+    }
+
+    .loginBox input[type="submit"] {
+        width: 30%;
+
+    }
+
+    .Login-Title h1 {
+        font-size: 50px;
+    }
+    .Login-Title h1 {
+        background-color: #fff;
+    }
+
+
+    /* page menu ------------------------------------ */
+
+
+    .Container-Two-Plate {
+        display: grid;
+        width: 60%;
+         /* height: 60vh; */
+        grid-template-columns: 50% 50% ;
+        grid-template-rows: 1fr ;
+        border: 2px double #FEA82F ;
+        margin: 2% 9% 0% 19%;
+      }
+      .Plate-One{ 
+        grid-column: 1/2;
+        grid-row: 1;
+      }
+
+    .Plate-Two{
+     grid-column: 2/3;
+     grid-row: 1;
+    }
+
+    .day { 
+        position: relative;
+          Top: 6vh;
+          left: 47%;
+          width: 10vw;
+    }
+
+/* HEADER */
+    .List-Menu {
+        justify-self: center;
+           grid-column: 2/3;
+    
+         }
+         .header-Menu{
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           grid-template-rows: 1fr ;
+         }
+   
+
+
+
+         /*-----------------------   FEEDBACK  PAGE  ----------------------------- */
+  
+
+         .Container-All-Plates { 
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+           flex-wrap: wrap;
+         }
+   .Container-Plate-feed {
+    height: 55%;
+    width: 20%;
+    display: inline-block;
+    border:2px double #F0A729;
+    margin-bottom: 4%;
+}
+
+.Plate-image {
+margin: 2% 0% 0% 8%;
+width: 80%;
+height: 40%;
+border-radius: 10PX;
+
+}
+
+.Plate-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3%;
+    /* border: 1px solid white; */
+    color:#ffffff;
+    width: 95%;
+   
+}
+
+.Send-Btn {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+}
